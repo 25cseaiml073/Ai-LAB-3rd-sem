@@ -29,12 +29,14 @@ if __name__ == '__main__':
     target = int(input("Enter Target Capacity: "))
     water_jug_bfs(jug1, jug2, target)
 """ OUTPUT:
-Enter Jug 1 Capacity: 4
+Enter Jug 1 Capacity: 5
 Enter Jug 2 Capacity: 3
-Enter Target Capacity: 2
+Enter Target Capacity: 1
 Steps to solve the Water Jug problem:
 (0, 0)
-(0, 3)
-(3, 0)
-(3, 3)
-(4, 2) """
+(5, 0)
+(2, 3)
+(2, 0)
+(0, 2)
+(5, 2)
+(1, 3) """

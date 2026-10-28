@@ -30,5 +30,5 @@ if __name__ == '__main__':
         optimal_value = minimax(0, 0, True, scores, -math.inf, math.inf, max_depth)
         print("The optimal value is:", optimal_value)
     """ OUTPUT: 
-    Enter 8 leaf node values separated by space: 3 5 6 9 1 2 0 -1
-    The optimal value is: 5 """
+    Enter 8 leaf node values separated by space: 3 6 9 11 0 2 9 12
+    The optimal value is: 6 """

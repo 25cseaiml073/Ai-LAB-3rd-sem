@@ -26,8 +26,8 @@ if __name__ == '__main__':
     print(f"Best position: {best_position}")
     print(f"Maximum value: {max_value}")
 """OUTPUT:
-Enter starting position: -2.0
-Enter step size: 0.5
+Enter starting position: 5
+Enter step size: 1
 Enter maximum iterations: 10
 Best position: 0.0
-Maximum value: 5.0 """
+Maximum value: 10 """

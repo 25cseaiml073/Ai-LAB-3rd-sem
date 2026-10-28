@@ -12,16 +12,16 @@ def bfs(graph, start):
                 queue.append(neighbour)
 # Graph representation
 graph = {
-    'A': ['B', 'C'],
-    'B': ['D', 'E'],
-    'C': ['F'],
-    'D': [],
-    'E': ['F'],
-    'F': []
+    'A': ['B', 'N'],
+    'N': ['L'],
+    'B': ['L', 'K'],
+    'L': ['T'],
+    'T': ['K'],
+    'K': []
 }
 if __name__ == '__main__':
     print("Following is the Breadth-First Search:")
     bfs(graph, 'A')
-   """OUTPUT:
-   Following is the Breadth-First Search:
-    A B C D E F """
+    """OUTPUT:
+    Following is the Breadth-First Search:
+    A B N L K T """

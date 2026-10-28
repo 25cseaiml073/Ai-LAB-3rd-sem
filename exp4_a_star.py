@@ -20,8 +20,8 @@ def a_star(graph, heuristics, start, goal):
 graph = {
     'A': [('B', 1), ('C', 3)],
     'B': [('D', 3), ('E', 6)],
-    'C': [('F', 5)],
-    'D': [('G', 2)],
+    'C': [('F', 5), ('E', 1)],
+    'D': [('G', 2), ('E', 1)],
     'E': [('G', 1)],
     'F': [('G', 2)],
     'G': []
@@ -29,9 +29,9 @@ graph = {
 heuristics = {
     'A': 7,
     'B': 6,
-    'C': 4,
+    'C': 6,
     'D': 2,
-    'E': 1,
+    'E': 4,
     'F': 2,
     'G': 0
 }
@@ -45,5 +45,5 @@ if __name__ == '__main__':
     else:
         print("no path found")
 """ OUTPUT:
-shortest path: A->B->D->G
-total cost: 6 """
+shortest path: A->C->F
+total cost: 8 """
